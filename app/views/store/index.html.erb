@@ -6,8 +6,8 @@
         <li><%= image_tag(product.image_url) %></li>
         
         <ul class="test">
-        <li><%= number_to_currency(product.price) %>
-        <%= button_to 'Add to Cart', line_items_path(product_id: product) %></li>
+        <li><%= number_to_currency(product.price) %></li>
+        <li><%= button_to 'Add to Cart', line_items_path(product_id: product) , class:"btn btn-xs btn-danger" %></li>
         <li><%= link_to 'Show', product , class:"btn btn-xs btn-danger" %></li>
         <li><%= link_to 'Edit', edit_product_path(product) , class:"btn btn-xs btn-danger" %></li>
         <li><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } , class:"btn btn-xs btn-danger" %></li>
