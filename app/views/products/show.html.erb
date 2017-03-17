@@ -15,13 +15,13 @@
 
 <p>
   <strong>Description:</strong>
-  <%=sanitize @product.description %>
+  <%= strip_tags(@product.description) %>
 </p>
 
 
 <p>
   <strong>Image url:</strong>
-  <%= @product.image_url %>
+  <%= image_tag(@product.image_url) %>
 </p>
 
 

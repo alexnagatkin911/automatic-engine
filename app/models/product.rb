@@ -10,5 +10,6 @@ class Product < ApplicationRecord
          errors.add(:base, 'Line Items present')
         throw :abort
         end
-     end
+      end
+
 end
